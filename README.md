@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub!;I'm+Rachid+Mustapha+Amine;A+CS+Student+%26+Full+Stack+Developer;Have+a+great+visit+%3C3)](https://git.io/typing-svg)
+
 <!--
 **kalis26/kalis26** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
