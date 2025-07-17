@@ -4,9 +4,15 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub!;I'm+a+CS+Student+%26+Full+Stack+Developer;Have+a+great+visit+%3C3" alt="Typing SVG" /></a>
 </div>
 
-Welcome to my Github profile! I'm a 2nd year CS student at École Nationale Supérieure d'Informatique (Ex. INI) in Algiers, and a passionate full stack developer who enjoys spending his free time learning about new & old technologies. I also love building web applications and contributing to open source projects.
+Welcome to my Github profile! I'm a 2nd year CS student at École Nationale Supérieure d'Informatique (Ex. INI) in Algiers, and a passionate full stack developer who enjoys spending his free time learning about new & old technologies. I also love building web applications, designing their UI, and contributing to open source projects.
 
 ---
+
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,html,css,c,py,git,ai,ps,figma">
+  </a>
+</div>
 
 <!--
 **kalis26/kalis26** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
