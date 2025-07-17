@@ -35,11 +35,14 @@ Welcome to my Github profile! I'm a 2nd year computer science student at École 
 
 ### 📧 To contact me
 
-<div align="center">
-
-  [![contact](https://skillicons.dev/icons?i=linkedin,gmail)](https://skillicons.dev)
-  
-</div>
+<p align="center">
+  <a href="https://www.linkedin.com/in/amine-mustapha-rachid-446a1b32a/">
+    <img src="https://skillicons.dev/icons?i=linkedin" />
+  </a>
+  <a href="mailto:aminera2006@gmail.com">
+    <img src="https://skillicons.dev/icons?i=gmail" />
+  </a>
+</p>
 
 <!--
 **kalis26/kalis26** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
