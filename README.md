@@ -14,7 +14,7 @@ Welcome to my Github profile! I'm a 2nd year computer science student at École 
 
 ---
 
-### Currently Learning
+### 💡 I'm currently learning
 
 <div align="center">
   <a href="https://skillicons.dev">
@@ -24,10 +24,21 @@ Welcome to my Github profile! I'm a 2nd year computer science student at École 
 
 ---
 
-### GitHub Stats
+### 📈 My GitHub stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kalis26&theme=vue-dark&show_icons=true&hide_border=true&count_private=false">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kalis26&theme=vue-dark&show_icons=true&hide_border=true&layout=compact" width="420px">
+</div>
+
+---
+
+### 📧 To contact me
+
+<div align="center">
+
+  [![contact](https://skillicons.dev/icons?i=linkedin,gmail)](https://skillicons.dev)
+  
 </div>
 
 <!--
