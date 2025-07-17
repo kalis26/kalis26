@@ -27,8 +27,8 @@ Welcome to my Github profile! I'm a 2nd year computer science student at École 
 ### 📈 My GitHub stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kalis26&theme=vue-dark&show_icons=true&hide_border=true&count_private=false">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kalis26&theme=vue-dark&show_icons=true&hide_border=true&layout=compact" width="420px">
+  <img src="https://github-readme-stats.vercel.app/api?username=kalis26&theme=vue-dark&show_icons=true&hide_border=true&count_private=false"><br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kalis26&theme=vue-dark&show_icons=true&hide_border=true&layout=compact" width="468px">
 </div>
 
 ---
