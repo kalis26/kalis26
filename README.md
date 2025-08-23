@@ -8,17 +8,7 @@ Welcome to my Github profile! I'm a 2nd year computer science student at École 
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,html,css,c,py,react,tailwind,git,ai,ps,figma">
-  </a>
-</div>
-
----
-
-### 💡 I'm currently learning
-
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=mongodb,mysql">
+    <img src="https://skillicons.dev/icons?i=js,ts,html,css,c,py,react,tailwind,nextjs,mysql,git,ai,ps,figma">
   </a>
 </div>
 
