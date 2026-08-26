@@ -369,7 +369,10 @@ def user_getter(username):
     }'''
     variables = {'login': username}
     request = simple_request(user_getter.__name__, query, variables)
-    return {'id': request.json()['data']['user']['id']}, request.json()['data']['user']['createdAt']
+    user = request.json()['data']['user']
+    if user is None:
+        raise ValueError(f"GitHub returned no user for USER_NAME={username!r}. Check the USER_NAME repository secret; it must be only your GitHub username, not a URL or owner/repo path.")
+    return {'id': user['id']}, user['createdAt']
 
 def follower_getter(username):
     """
