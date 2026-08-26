@@ -103,7 +103,11 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
         if count_type == 'repos':
             return request.json()['data']['user']['repositories']['totalCount']
         elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+            repositories = request.json()['data']['user']['repositories']
+            total_stars = stars_counter(repositories['edges'])
+            if repositories['pageInfo']['hasNextPage']:
+                return total_stars + graph_repos_stars(count_type, owner_affiliation, repositories['pageInfo']['endCursor'])
+            return total_stars
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -293,7 +297,9 @@ def stars_counter(data):
     Count total stars in repositories owned by me
     """
     total_stars = 0
-    for node in data: total_stars += node['node']['stargazers']['totalCount']
+    for node in data:
+        if node['node'] is not None:
+            total_stars += node['node']['stargazers']['totalCount']
     return total_stars
 
 
