@@ -110,6 +110,28 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
             return total_stars
 
 
+def rest_owned_repo_stars(page=1, total_stars=0):
+    """
+    Count stars received across repositories owned by the user.
+    """
+    query_count('graph_repos_stars')
+    request = requests.get(
+        f'https://api.github.com/users/{USER_NAME}/repos',
+        params={'type': 'owner', 'per_page': 100, 'page': page},
+        headers=HEADERS,
+    )
+    if request.status_code != 200:
+        raise Exception(rest_owned_repo_stars.__name__, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
+
+    repos = request.json()
+    for repo in repos:
+        total_stars += repo.get('stargazers_count', 0)
+
+    if len(repos) == 100:
+        return rest_owned_repo_stars(page + 1, total_stars)
+    return total_stars
+
+
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
     """
     Uses GitHub's GraphQL v4 API and cursor pagination to fetch 100 commits from a repository at a time
@@ -442,7 +464,7 @@ if __name__ == '__main__':
     total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
-    star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
+    star_data, star_time = perf_counter(rest_owned_repo_stars)
     repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
