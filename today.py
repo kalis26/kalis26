@@ -11,7 +11,7 @@ import hashlib
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
+USER_NAME = os.environ['USER_NAME']
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -331,13 +331,14 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     """
     tree = etree.parse(filename)
     root = tree.getroot()
-    justify_format(root, 'commit_data', commit_data, 22)
-    justify_format(root, 'star_data', star_data, 14)
-    justify_format(root, 'repo_data', repo_data, 6)
+    justify_format(root, 'age_data', age_data)
+    justify_format(root, 'commit_data', commit_data, 33)
+    justify_format(root, 'star_data', star_data, 47)
+    justify_format(root, 'repo_data', repo_data, 13)
     justify_format(root, 'contrib_data', contrib_data)
-    justify_format(root, 'follower_data', follower_data, 10)
+    justify_format(root, 'follower_data', follower_data, 40)
     justify_format(root, 'loc_data', loc_data[2], 9)
-    justify_format(root, 'loc_add', loc_data[0])
+    justify_format(root, 'loc_add', loc_data[0], 22)
     justify_format(root, 'loc_del', loc_data[1], 7)
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
@@ -450,12 +451,8 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
 
 
 if __name__ == '__main__':
-    """
-    Andrew Grant (Andrew6rant), 2022-2025
-    """
     print('Calculation times:')
     # define global variable for owner ID and calculate user's creation date
-    # e.g {'id': 'MDQ6VXNlcjU3MzMxMTM0'} and 2019-11-03T21:15:07Z for username 'Andrew6rant'
     user_data, user_time = perf_counter(user_getter, USER_NAME)
     OWNER_ID, acc_date = user_data
     formatter('account data', user_time)
