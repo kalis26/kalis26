@@ -21,7 +21,7 @@ text, tspan {white-space: pre;}
 <text x="20" y="30" fill="#24292f" font-family="calsans, Arial, sans-serif">
 <tspan>amine-mustapha@rachid</tspan> —————————————————————
 <tspan x="30" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ....................................................................................... </tspan><tspan class="value">Windows 11, iOS</tspan>
-<tspan x="30" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ......................................................... </tspan><tspan class="value" id="age_data">20 years, 4 months, 8 days</tspan>
+<tspan x="30" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ......................................................... </tspan><tspan class="value" id="age_data">20 years, 4 months, 9 days</tspan>
 <tspan x="30" y="90" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ...................................................................................... </tspan><tspan class="value">VSCode, Codex</tspan>
 <tspan x="30" y="110" class="cc">. </tspan>
 <tspan x="30" y="130" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Java, Python, TypeScript, C</tspan>
